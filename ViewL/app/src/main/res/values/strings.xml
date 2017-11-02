@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">ViewL</string>
+    <string name="drawcolor">DrawColor</string>
+    <string name="WaterRipple">WaterRipple</string>
+    <string name="FlipBoard">Flipboard</string>
+</resources>
