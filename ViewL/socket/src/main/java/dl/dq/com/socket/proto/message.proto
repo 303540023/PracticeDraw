@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+option java_outer_classname = "MessageProto";
+
+message Message {
+  int64 messageID = 1;
+  string content = 2;
+  string userID = 3;
+  string targetID = 4; //conversionID
+  string emotion = 5;
+}
