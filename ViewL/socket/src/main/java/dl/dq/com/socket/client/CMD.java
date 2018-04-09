@@ -1,4 +1,4 @@
-package dl.dq.com.socket;
+package dl.dq.com.socket.client;
 
 import java.io.IOException;
 
@@ -10,7 +10,7 @@ public class CMD {
     private static Runtime runtime = Runtime.getRuntime();
     public static void excuteProtoc(String fileName){
         try {
-            Process process = runtime.exec("/home/liqing/work/tool/protoc/bin/protoc.sh");
+            Process process = runtime.exec("/home/liqing/work/tool/protoc/bin/make.sh");
             int length;
             while ((length = process.getInputStream().read()) != -1){
                 byte[] bytes = new byte[length];

@@ -16,7 +16,7 @@ public class Client {
         String host = "127.0.0.1";
         int port = 55533;
         // 与服务端建立连接
-        for (int i = 0; i < 70000; i++) {
+        for (int i = 0; i < 1; i++) {
             Socket socket = new Socket(host, port);
             ThreadPoolManager.getExecutor().execute(new InputThread(socket,String.valueOf(i+1),String.valueOf(i)));
             ThreadPoolManager.getExecutor().execute(new OutputThread(socket));

@@ -1,14 +1,5 @@
 //apply plugin: 'java-library'
-buildscript {
-    repositories {
-        jcenter()
-    }
-    dependencies {
-        classpath 'com.github.jengelman.gradle.plugins:shadow:2.0.3'
-    }
-}
 apply plugin: 'java'
-apply plugin: 'com.github.johnrengelman.shadow'
 
 sourceCompatibility = "1.6"
 targetCompatibility = "1.6"
@@ -33,11 +24,11 @@ task collectJars(type: Copy) {
 //        include(dependency('libs/gson-2.6.2.jar'))
 //    }
 //}
-jar {
-    manifest {
-        attributes 'Class-Path': 'libs/protobuf-java-3.5.1.jar'
-    }
-}
+//jar {
+//    manifest {
+//        attributes 'Class-Path': 'libs/protobuf-java-3.5.1.jar'
+//    }
+//}
 dependencies {
     //implementation fileTree(include: ['*.jar'], dir: 'libs')
     implementation files('libs/protobuf-java-3.5.1.jar')

@@ -1,0 +1,12 @@
+# server
+dl/dq/com/socket/SocketServer.java
+dl/dq/com/socket/server/DispatchThread.java
+
+# model
+dl/dq/com/socket/model/MessageProto.java
+
+# client
+dl/dq/com/socket/Client.java
+dl/dq/com/socket/client/InputThread.java
+dl/dq/com/socket/client/OutputThread.java
+dl/dq/com/socket/client/ThreadPoolManager.java
