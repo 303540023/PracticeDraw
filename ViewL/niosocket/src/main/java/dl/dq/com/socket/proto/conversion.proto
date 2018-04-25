@@ -1,0 +1,8 @@
+syntax = "proto3";
+
+option java_outer_classname = "ConversionProto";
+
+message Conversion {
+  string conversionID = 1;
+  string type = 2;
+}
